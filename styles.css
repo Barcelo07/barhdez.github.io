@@ -206,3 +206,6 @@ body{background:radial-gradient(ellipse at 50% -18%,#122431 0%,var(--bg) 48%);ba
 .cv-download:not([open])>.cv-language-menu{display:none}
 .cv-language-menu{min-width:220px}
 .cv-download>summary:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+
+/* Fail-safe: portfolio content must remain visible even if an animation script fails */
+.reveal{opacity:1!important;transform:none!important}
