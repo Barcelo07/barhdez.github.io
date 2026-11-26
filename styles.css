@@ -23,3 +23,10 @@
 @media(max-width:1050px){.hero h1.hero-fullname-title{font-size:clamp(38px,5.3vw,58px)}}
 @media(max-width:760px){.hero h1.hero-fullname-title{font-size:clamp(39px,9vw,62px);line-height:1.06;letter-spacing:-.06em;margin:12px 0 16px}}
 @media(max-width:380px){.hero h1.hero-fullname-title{font-size:clamp(34px,8.8vw,42px)}}
+
+
+/* About section: uniform body typography across both columns */
+.about{grid-template-columns:1fr 1fr;gap:7%;align-items:start}
+.about .lead{font:400 12px/1.95 var(--sans);color:var(--muted);margin:0;max-width:540px}
+.about>div>p{font:400 12px/1.95 var(--sans);color:var(--muted);margin:0 0 15px}
+@media(max-width:760px){.about{grid-template-columns:1fr;gap:22px}}
