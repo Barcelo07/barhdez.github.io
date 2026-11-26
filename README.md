@@ -1,26 +1,26 @@
-# Hadyr / BarHdez — Portafolio académico y profesional
+# Hadyr | BarHdez — Portafolio académico/profesional
 
-Sitio bilingüe (español/inglés), adaptable a móviles y preparado para GitHub Pages.
+Sitio personal bilingüe (español/inglés), adaptable a móviles y ordenadores, con estética dark y personalidad balanced.
 
-## Identidad y contenido
-- Nombre público: **Hadyr**; alias / marca: **BarHdez**.
-- Formación: Ingeniería en Automática, CUJAE – Facultad de Ingeniería Automática y Biomédica (FIAB), Pregrado, Plan E. No se muestra el año académico.
-- Certificados declarados: Operador de microcomputadoras y Lenguaje y técnica de programación, acreditados por los Joven Club de Computación.
-- Áreas: matemáticas y física, programación, electrónica, control, automatización, investigación; desplegable con idiomas y ciencias humanísticas.
-- Archivo de proyectos: Código, Simulaciones, Informes, Resúmenes y Material extracurricular.
-- Herramientas: C/C++, Python (en aprendizaje), Git/GitHub.
-- Contacto: barcelohadyr@gmail.com y WhatsApp +53 55488337.
+## Contenido
+- Perfil: Hadyr Alejandro Barceló Hernández; BarHdez se conserva como marca personal.
+- Formación: Ingeniería en Automática, CUJAE – FIAB, Pregrado · Plan E.
+- Certificados declarados: Operador de microcomputadoras y Lenguaje y técnicas de programación, Joven Club de Computación y Electrónica. Los documentos originales quedan pendientes de incorporar.
+- Áreas de desarrollo y menú desplegable de idiomas y ciencias humanísticas.
+- Proyectos organizados en código, simulaciones, informes, resúmenes y material extracadémico. No se presentan proyectos ficticios.
+- Herramientas: C/C++, Python (en aprendizaje), Git/GitHub; se conservan las áreas Ingeniería y Workspace.
+- Contacto directo por correo y WhatsApp.
 
-Las categorías de proyectos están preparadas, pero no se inventan trabajos ni resultados. Los certificados se describen sin publicar copias de los documentos.
+## Publicación
+Repositorio: https://github.com/Barcelo07/barhdez.github.io
+Configurar GitHub Pages desde **Settings → Pages**, rama `main`, carpeta raíz (`/root`).
 
-## Estructura
-- `index.html`: estructura y contenido.
-- `styles.css`: identidad visual dark, responsive y animaciones.
-- `script.js`: selector ES/EN, menú móvil, áreas desplegables y pestañas de proyectos.
+URL del sitio: https://barcelo07.github.io/barhdez.github.io/
 
-## GitHub Pages
-Repositorio: https://github.com/Barcelo07/barhdez.github.io  
-Configura **Settings → Pages → Deploy from a branch → main → /(root)**.
+## Próximas mejoras
+- Añadir fotografía de perfil cuando se proporcione el archivo elegido.
+- Incorporar los documentos de los certificados si se desea mostrarlos o enlazarlos.
+- Añadir proyectos reales, repositorios, informes y resultados a medida que estén listos.
+- Ampliar la sección Sobre mí cuando esté disponible el CV actualizado.
 
-## Próximos pasos
-Añadir el CV cuando esté disponible, proyectos reales y documentos acreditativos solo si se decide publicarlos. La información está planteada para evolucionar con el tiempo.
+GitHub Pages publica el contenido en Internet. No incluyas documentos privados ni información sensible.
