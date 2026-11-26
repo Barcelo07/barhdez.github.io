@@ -1,38 +1,26 @@
-# Barhdez — Portafolio de Ingeniería
+# Hadyr / BarHdez — Portafolio académico y profesional
 
-Sitio web personal, bilingüe (español/inglés), adaptable a móviles y ordenadores.
+Sitio bilingüe (español/inglés), adaptable a móviles y preparado para GitHub Pages.
 
-## Contenido
-- `index.html`: estructura y contenido del sitio.
-- `styles.css`: diseño visual adaptable.
-- `script.js`: selector de idioma y menú móvil.
+## Identidad y contenido
+- Nombre público: **Hadyr**; alias / marca: **BarHdez**.
+- Formación: Ingeniería en Automática, CUJAE – Facultad de Ingeniería Automática y Biomédica (FIAB), Pregrado, Plan E. No se muestra el año académico.
+- Certificados declarados: Operador de microcomputadoras y Lenguaje y técnica de programación, acreditados por los Joven Club de Computación.
+- Áreas: matemáticas y física, programación, electrónica, control, automatización, investigación; desplegable con idiomas y ciencias humanísticas.
+- Archivo de proyectos: Código, Simulaciones, Informes, Resúmenes y Material extracurricular.
+- Herramientas: C/C++, Python (en aprendizaje), Git/GitHub.
+- Contacto: barcelohadyr@gmail.com y WhatsApp +53 55488337.
 
-## Personalización inicial
-Antes de publicar, revisa:
-- Nombre público que quieres mostrar.
-- Usuario y enlace de GitHub (`Barhdez`).
-- Carrera, facultad y universidad.
-- Herramientas que realmente utilizas.
-- Cualquier dato que prefieras no hacer público.
+Las categorías de proyectos están preparadas, pero no se inventan trabajos ni resultados. Los certificados se describen sin publicar copias de los documentos.
 
-No se han inventado proyectos, premios, certificaciones ni experiencia laboral. La sección de proyectos indica que el portafolio está en construcción.
+## Estructura
+- `index.html`: estructura y contenido.
+- `styles.css`: identidad visual dark, responsive y animaciones.
+- `script.js`: selector ES/EN, menú móvil, áreas desplegables y pestañas de proyectos.
 
-## Publicar con GitHub Pages
-1. Entra en https://github.com/Barhdez y crea un repositorio llamado `Barhdez.github.io` (el nombre debe coincidir exactamente con tu usuario de GitHub).
-2. Sube `index.html`, `styles.css`, `script.js` y este README a la raíz del repositorio.
-3. En GitHub, abre **Settings → Pages**.
-4. En **Build and deployment**, selecciona **Deploy from a branch**.
-5. Selecciona la rama `main` y la carpeta `/ (root)`, y guarda.
-6. Espera a que GitHub Pages publique el sitio. La dirección esperada será `https://barhdez.github.io/`.
+## GitHub Pages
+Repositorio: https://github.com/Barcelo07/barhdez.github.io  
+Configura **Settings → Pages → Deploy from a branch → main → /(root)**.
 
-Si GitHub no reconoce el nombre de usuario o la dirección, verifica la capitalización del nombre de usuario en la URL y el nombre exacto del repositorio.
-
-## Próximas mejoras
-- Añadir proyectos reales con capturas, código, informes y resultados.
-- Añadir una sección de CV cuando tengas una versión pública.
-- Incorporar enlaces a repositorios concretos.
-- Añadir una página individual para cada proyecto.
-- Revisar traducciones y accesibilidad antes de la publicación.
-
-## Nota de privacidad
-GitHub Pages publica el contenido en Internet. No incluyas contraseñas, documentos de identidad, direcciones personales, datos privados ni documentos académicos con restricciones de distribución.
+## Próximos pasos
+Añadir el CV cuando esté disponible, proyectos reales y documentos acreditativos solo si se decide publicarlos. La información está planteada para evolucionar con el tiempo.
