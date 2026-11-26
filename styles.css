@@ -30,3 +30,24 @@
 .about .lead{font:400 12px/1.95 var(--sans);color:var(--muted);margin:0;max-width:540px}
 .about>div>p{font:400 12px/1.95 var(--sans);color:var(--muted);margin:0 0 15px}
 @media(max-width:760px){.about{grid-template-columns:1fr;gap:22px}}
+
+
+/* Editorial profile layout inspired by the reference */
+.about-section{position:relative;background-color:#0a0f14;background-image:linear-gradient(#9aabb00a 1px,transparent 1px),linear-gradient(90deg,#9aabb00a 1px,transparent 1px);background-size:72px 72px;border-block:1px solid #26313b}
+.about-layout{display:grid;grid-template-columns:minmax(300px,.88fr) minmax(0,1.12fr);gap:clamp(42px,7vw,100px);align-items:start}
+.about-aside{position:sticky;top:112px}
+.about-aside .section-head{margin-bottom:34px}
+.about-aside .section-head h2{font-size:clamp(42px,5vw,62px);font-weight:400;letter-spacing:-.065em}
+.about-meta{display:grid;gap:13px;margin:0 0 36px}
+.about-meta p{display:flex;flex-wrap:wrap;gap:8px;margin:0;font:10px/1.7 var(--mono);letter-spacing:.04em;color:var(--soft)}
+.about-meta p b{font-weight:400;color:#c4d0da}
+.about-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.about-stats article{min-height:116px;padding:17px 12px;border:1px solid var(--line);border-radius:13px;background:#0e151d99;display:flex;flex-direction:column;justify-content:center;gap:9px;text-align:center}
+.about-stats strong{font:600 clamp(25px,3vw,34px)/1 var(--display);color:var(--cyan)}
+.about-stats span{font:9px/1.55 var(--mono);letter-spacing:.045em;text-transform:uppercase;color:var(--muted)}
+.about-copy{padding-top:3px}
+.about-copy p{max-width:none;margin:0 0 19px;font:400 15px/1.85 var(--sans);color:#aab5c0}
+.about-copy .about-intro{font-size:clamp(16px,1.35vw,18px);line-height:1.8;color:#d0d9e1}
+.about-copy .tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:27px}
+.about-copy .tags span{border:1px solid var(--line);border-radius:30px;padding:8px 12px;color:var(--soft);font:9px var(--mono);letter-spacing:.04em}
+@media(max-width:760px){.about-layout{grid-template-columns:1fr;gap:32px}.about-aside{position:static}.about-aside .section-head{margin-bottom:24px}.about-meta{margin-bottom:25px}.about-stats article{min-height:100px;padding:12px 7px}.about-stats span{font-size:8px}.about-copy p{font-size:13px;line-height:1.85}}
