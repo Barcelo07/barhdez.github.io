@@ -4,3 +4,11 @@
 .profile-core img{position:absolute;inset:0;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover;object-position:center 25%;border-radius:50%;display:block;z-index:3}
 .profile-core small{position:absolute;bottom:-29px;left:50%;transform:translateX(-50%);white-space:nowrap;font:8px var(--mono);letter-spacing:2px;color:#d4e3ee}
 .cert-card{align-items:center;min-height:100px}
+
+/* Larger, clearer profile portrait */
+.hero-visual{min-height:460px}
+.profile-core{width:246px;height:246px;border-width:3px;box-shadow:0 0 0 12px #c7f36b18,0 0 82px #176b8780}
+.profile-core img{object-position:center 24%;image-rendering:auto}
+.profile-core small{bottom:-32px;font-size:9px}
+@media(max-width:760px){.hero-visual{min-height:340px;height:340px}.profile-core{width:214px;height:214px}}
+@media(max-width:440px){.hero-visual{min-height:310px;height:310px}.profile-core{width:196px;height:196px}}
