@@ -197,3 +197,12 @@ body{background:radial-gradient(ellipse at 50% -18%,#122431 0%,var(--bg) 48%);ba
 .cv-language-menu a b{display:grid;place-items:center;width:27px;height:24px;border:1px solid #3b596b;border-radius:4px;color:var(--lime);font:9px var(--mono)}
 .cv-language-menu a i{margin-left:auto;color:var(--cyan);font-style:normal}
 @media(max-width:760px){.cv-language-menu{left:auto;right:0}.identity-line{font-size:7px}}
+
+/* Reliable native CV language dropdown */
+.cv-download{position:relative;z-index:25}
+.cv-download>summary{list-style:none;cursor:pointer;user-select:none}
+.cv-download>summary::-webkit-details-marker{display:none}
+.cv-download[open]>.cv-language-menu{display:block}
+.cv-download:not([open])>.cv-language-menu{display:none}
+.cv-language-menu{min-width:220px}
+.cv-download>summary:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
