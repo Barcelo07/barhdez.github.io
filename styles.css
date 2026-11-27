@@ -276,13 +276,3 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
  html.js .reveal{opacity:1;transform:none;transition:none}
  .portrait-card,.status-dot{animation:none!important}
 }
-
-/* Identidad institucional: CUJAE · FIAB · BARHDEZ */
-.identity-badges{position:absolute;inset:0;z-index:5;pointer-events:none}
-.identity-badge{position:absolute;display:flex;align-items:center;gap:8px;padding:8px 10px;background:rgba(9,17,26,.9);border:1px solid #385066;box-shadow:0 8px 24px #0005;backdrop-filter:blur(8px);min-width:88px}
-.identity-badge img{width:34px;height:34px;object-fit:contain;display:block}
-.identity-badge small{font:8px var(--mono);letter-spacing:1px;color:#edf3f7}
-.badge-cujae{top:15%;left:7%}.badge-fiab{top:35%;right:7%}.badge-barhdez{bottom:17%;left:12%}
-.badge-fiab img{width:38px;height:38px}.badge-barhdez{border-color:#c7f36b66}
-@media(max-width:760px){.identity-badge{min-width:0;padding:6px 7px;gap:5px}.identity-badge img{width:27px;height:27px}.identity-badge small{font-size:7px}.badge-cujae{top:12%;left:3%}.badge-fiab{top:34%;right:3%}.badge-barhdez{bottom:12%;left:4%}}
-@media(max-width:440px){.identity-badge img{width:23px;height:23px}.badge-fiab img{width:26px;height:26px}}
