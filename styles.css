@@ -409,3 +409,8 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
  .areas-dropdown-note{margin:0 13px 14px}
 }
 @media(prefers-reduced-motion:reduce){.about-stats .about-areas-toggle,.areas-dropdown-chevron{transition:none}}
+
+/* Learning fields integrated into development areas */
+.areas-dropdown .about-areas-list li.area-learning-item{align-items:center}
+.areas-dropdown .about-areas-list li .area-learning-status{flex:0 0 auto;margin-left:8px;padding:4px 7px;border:1px solid #79d9bf40;border-radius:20px;background:#79d9bf0d;color:#79d9bf;font:8px/1.2 var(--mono);white-space:nowrap}
+@media(max-width:760px){.areas-dropdown .about-areas-list li .area-learning-status{margin-left:4px;padding:3px 6px;font-size:7px}}
