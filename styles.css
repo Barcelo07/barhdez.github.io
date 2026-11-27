@@ -426,15 +426,16 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 
 
 /* Subtle alternating identity orbit in the upper-right of the contact section */
-.identity-orbit{position:absolute;z-index:1;right:8%;top:34px;width:190px;height:190px;display:grid;place-items:center;pointer-events:none}
+.identity-orbit{position:absolute;z-index:1;right:8%;top:62px;width:190px;height:190px;display:grid;place-items:center;pointer-events:none}
 .identity-orbit__ring{position:absolute;inset:0;border:1px solid #62c7d82b;border-radius:50%;box-shadow:0 0 28px #62c7d808,inset 0 0 24px #62c7d807}
 .identity-orbit__ring:after{content:"";position:absolute;inset:7px;border:1px dashed #c7f36b20;border-radius:50%}
 .identity-orbit__track{position:absolute;inset:0;animation:identity-orbit-turn 18s linear infinite alternate;will-change:transform}
-.identity-orbit__logo{position:absolute;width:48px;height:48px;display:grid;place-items:center;padding:5px;border:1px solid #54708080;background:linear-gradient(145deg,#142635ed,#0b1722ed);box-shadow:0 6px 18px #0005;border-radius:50%}
+.identity-orbit__logo{position:absolute;width:48px;height:48px;display:grid;place-items:center;padding:5px;border:1px solid #54708080;background:linear-gradient(145deg,#142635ed,#0b1722ed);box-shadow:0 6px 18px #0005;border-radius:50%;animation:identity-orbit-counter 18s linear infinite alternate;will-change:transform}
 .identity-orbit__logo img{display:block;width:100%;height:100%;object-fit:contain}
 .identity-orbit__fiab{left:calc(50% - 24px);top:-24px}
 .identity-orbit__brand{left:-24px;bottom:9px}
 .identity-orbit__cujae{right:-24px;bottom:9px}
 @keyframes identity-orbit-turn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@media(max-width:760px){.identity-orbit{width:126px;height:126px;right:18px;top:18px}.identity-orbit__logo{width:36px;height:36px;padding:4px}.identity-orbit__fiab{left:calc(50% - 18px);top:-18px}.identity-orbit__brand{left:-18px;bottom:6px}.identity-orbit__cujae{right:-18px;bottom:6px}.contact-inner{padding-top:132px}}
-@media(prefers-reduced-motion:reduce){.identity-orbit__track{animation:none}}
+@keyframes identity-orbit-counter{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+@media(max-width:760px){.identity-orbit{width:126px;height:126px;right:18px;top:44px}.identity-orbit__logo{width:36px;height:36px;padding:4px}.identity-orbit__fiab{left:calc(50% - 18px);top:-18px}.identity-orbit__brand{left:-18px;bottom:6px}.identity-orbit__cujae{right:-18px;bottom:6px}.contact-inner{padding-top:132px}}
+@media(prefers-reduced-motion:reduce){.identity-orbit__track,.identity-orbit__logo{animation:none}}
