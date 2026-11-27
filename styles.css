@@ -439,3 +439,14 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 @keyframes identity-orbit-counter{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
 @media(max-width:760px){.identity-orbit{width:126px;height:126px;right:18px;top:44px}.identity-orbit__logo{width:36px;height:36px;padding:4px}.identity-orbit__fiab{left:calc(50% - 18px);top:-18px}.identity-orbit__brand{left:-18px;bottom:6px}.identity-orbit__cujae{right:-18px;bottom:6px}.contact-inner{padding-top:132px}}
 @media(prefers-reduced-motion:reduce){.identity-orbit__track,.identity-orbit__logo{animation:none}}
+
+/* FIAB / Bar_Hdez / CUJAE orbit around the rectangular portrait edge */
+.portrait-image{z-index:1}
+.portrait-edge-orbit{position:absolute;z-index:5;top:32px;left:10px;right:10px;height:275px;pointer-events:none;overflow:visible}
+.portrait-edge-line{position:absolute;inset:-1px;border:1px solid #62c7d82b;pointer-events:none}
+.portrait-edge-logo{position:absolute;left:0;top:0;width:35px;height:35px;padding:4px;display:grid;place-items:center;background:linear-gradient(145deg,#142635f5,#0b1722f5);border:1px solid #547080a0;box-shadow:0 4px 14px #0008;offset-path:inset(0);offset-rotate:0deg;offset-anchor:center;animation:portrait-edge-travel 18s linear infinite;will-change:offset-distance,transform}
+.portrait-edge-logo img{width:100%;height:100%;display:block;object-fit:contain}
+.edge-fiab{animation-delay:0s}.edge-brand{animation-delay:-6s}.edge-cujae{animation-delay:-12s}
+@keyframes portrait-edge-travel{0%,5%{offset-distance:0%;transform:scale(.78)}12%,20%{transform:scale(1)}25%,100%{offset-distance:100%;transform:scale(1)}}
+@media(max-width:760px){.portrait-edge-orbit{top:32px;height:275px}.portrait-edge-logo{width:30px;height:30px;padding:3px}}
+@media(prefers-reduced-motion:reduce){.portrait-edge-logo{animation:none;offset-distance:0%}}
