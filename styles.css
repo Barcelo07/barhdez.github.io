@@ -448,3 +448,23 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 @keyframes portrait-card-travel{from{offset-distance:0%}to{offset-distance:100%}}
 @media(max-width:760px){.portrait-card-orbit{inset:-1px}.portrait-card-tag{min-width:42px;height:27px;padding:0 7px;font-size:8px;offset-path:inset(-13px)}}
 @media(prefers-reduced-motion:reduce){.portrait-card-tag{animation:none;offset-distance:0%}}
+
+
+/* Identidad central cuadrada en la órbita de contacto */
+.identity-orbit__center{
+  position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:88px;height:88px;box-sizing:border-box;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:3px;padding:8px;
+  border:1px solid #547080a0;border-radius:12px;
+  background:linear-gradient(145deg,#142635f5,#0b1722f5);
+  box-shadow:0 6px 20px #0006,inset 0 0 18px #62c7d80a;
+}
+.identity-orbit__center img{display:block;width:39px;height:39px;object-fit:contain}
+.identity-orbit__center span{color:#edf4f7;font:600 9px var(--mono);letter-spacing:1.5px;line-height:1}
+.identity-orbit__center small{color:#9fb4c0;font:500 7px var(--mono);letter-spacing:1.7px;line-height:1}
+@media(max-width:760px){
+  .identity-orbit__center{width:62px;height:62px;gap:2px;padding:5px;border-radius:9px}
+  .identity-orbit__center img{width:27px;height:27px}
+  .identity-orbit__center span{font-size:7px;letter-spacing:1px}
+  .identity-orbit__center small{font-size:5.5px;letter-spacing:1px}
+}
