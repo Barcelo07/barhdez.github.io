@@ -209,3 +209,70 @@ body{background:radial-gradient(ellipse at 50% -18%,#122431 0%,var(--bg) 48%);ba
 
 /* Fail-safe: portfolio content must remain visible even if an animation script fails */
 .reveal{opacity:1!important;transform:none!important}
+
+
+/* 2026 refinement: motion, consistent icon system and responsive polish */
+.reveal{opacity:1;transform:none}
+html.js .reveal{opacity:0;transform:translate3d(0,22px,0);transition:opacity .72s cubic-bezier(.2,.7,.2,1),transform .72s cubic-bezier(.2,.7,.2,1)}
+html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
+.area,.cert-card,.learning-card,.edu-card,.tool-group,.project-panel,.portrait-card{transition:transform .32s cubic-bezier(.2,.7,.2,1),border-color .32s ease,box-shadow .32s ease,background-color .32s ease}
+.area:hover,.cert-card:hover,.learning-card:hover{transform:translateY(-5px);border-color:#49697b;box-shadow:0 16px 34px #0003}
+.edu-card:hover,.project-panel:hover{border-color:#527487;box-shadow:0 18px 40px #0003}
+.portrait-card{animation:portrait-float 7s ease-in-out infinite}
+@keyframes portrait-float{0%,100%{transform:translateY(-2px)}50%{transform:translateY(-9px)}}
+.area-icon{display:flex!important;align-items:center;height:48px!important;color:var(--lime)!important}
+.area-icon svg{width:29px;height:29px;stroke-width:1.55}
+.tool-group i{border-radius:8px}
+.tool-group i svg{width:16px;height:16px;stroke-width:1.7}
+.tool-group i.py,.tool-group i.git{color:var(--lime)}
+.education-status{display:inline-flex!important;align-items:center;gap:8px;margin-top:10px;padding:8px 10px;border:1px solid #4c765e;border-radius:999px;background:#9bd58c12;color:#a9e2b2!important;font:9px var(--mono)!important;letter-spacing:.06em}
+.status-dot{width:7px;height:7px;border-radius:50%;background:#9bd58c;box-shadow:0 0 0 4px #9bd58c20;animation:status-pulse 2.4s ease-in-out infinite}
+@keyframes status-pulse{50%{box-shadow:0 0 0 7px #9bd58c08}}
+.education-current{color:#d7e3eb!important;font-weight:600}
+.edu-card h3{font-size:clamp(20px,2.3vw,25px)}
+.edu-card>div:nth-child(2){min-width:0}
+.hero-description,.section-head>p,.about-copy p,.area p,.learning-card p,.contact-inner>p{overflow-wrap:anywhere}
+.button,.project-tabs button,.lang-toggle,.menu-toggle{min-height:42px}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+@media(max-width:1050px){
+ .topbar{gap:14px}.brand-name{font-size:10px}.nav{gap:9px}.nav a{font-size:8px}
+ .hero{gap:4%}.hero-visual{min-width:0}
+}
+@media(max-width:760px){
+ .topbar{padding-inline:max(5%,env(safe-area-inset-left));}
+ .nav{padding:20px 6%;gap:16px}
+ .nav a{font-size:12px;padding:4px 0}
+ .hero{min-height:0;padding-bottom:52px}
+ .hero-copy{width:100%}.hero-buttons{gap:9px}.hero-buttons .button{min-height:44px}
+ .hero-visual{width:100%;min-width:0}
+ .about-layout{gap:28px}
+ .about-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .edu-card{grid-template-columns:minmax(0,1fr) auto;gap:16px}
+ .edu-card>div:first-child{grid-column:1/-1}
+ .degree-mark{grid-column:2;grid-row:2}
+ .education-status{font-size:8px!important}
+ .areas-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .learning-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .footer{padding-bottom:max(23px,env(safe-area-inset-bottom))}
+}
+@media(max-width:480px){
+ .section{padding-left:5%;padding-right:5%}
+ .hero h1.hero-fullname-title{font-size:clamp(34px,9.1vw,44px);overflow-wrap:normal}
+ .hero-buttons{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+ .hero-buttons>.button,.hero-buttons .cv-download{width:100%;justify-content:center}
+ .cv-download>.cv-trigger{width:100%;justify-content:center}
+ .hero-meta{line-height:1.8}
+ .about-stats{gap:7px}.about-stats article{min-width:0}
+ .edu-card{padding:19px;grid-template-columns:minmax(0,1fr)}
+ .degree-mark{grid-column:1;grid-row:auto;text-align:left}
+ .areas-grid,.learning-grid{grid-template-columns:1fr}
+ .area{min-height:150px}
+ .project-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .project-tabs button{min-width:0;padding:10px 7px}
+ .contact-actions{grid-template-columns:1fr}
+ .contact-email a{overflow-wrap:anywhere}
+}
+@media(prefers-reduced-motion:reduce){
+ html.js .reveal{opacity:1;transform:none;transition:none}
+ .portrait-card,.status-dot{animation:none!important}
+}
