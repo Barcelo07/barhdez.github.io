@@ -429,8 +429,8 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 .identity-orbit{position:absolute;z-index:1;right:8%;top:62px;width:190px;height:190px;display:grid;place-items:center;pointer-events:none}
 .identity-orbit__ring{position:absolute;inset:0;border:1px solid #62c7d82b;border-radius:50%;box-shadow:0 0 28px #62c7d808,inset 0 0 24px #62c7d807}
 .identity-orbit__ring:after{content:"";position:absolute;inset:7px;border:1px dashed #c7f36b20;border-radius:50%}
-.identity-orbit__track{position:absolute;inset:0;animation:identity-orbit-turn 18s linear infinite;will-change:transform}
-.identity-orbit__logo{position:absolute;width:48px;height:48px;display:grid;place-items:center;padding:5px;border:1px solid #54708080;background:linear-gradient(145deg,#142635ed,#0b1722ed);box-shadow:0 6px 18px #0005;border-radius:50%;animation:identity-orbit-counter 18s linear infinite;will-change:transform}
+.identity-orbit__track{position:absolute;inset:0;animation:identity-orbit-turn 32s linear infinite;will-change:transform}
+.identity-orbit__logo{position:absolute;width:48px;height:48px;display:grid;place-items:center;padding:5px;border:1px solid #54708080;background:linear-gradient(145deg,#142635ed,#0b1722ed);box-shadow:0 6px 18px #0005;border-radius:50%;animation:identity-orbit-counter 32s linear infinite;will-change:transform}
 .identity-orbit__logo img{display:block;width:100%;height:100%;object-fit:contain}
 .identity-orbit__fiab{left:calc(50% - 24px);top:-24px}
 .identity-orbit__brand{left:-24px;bottom:9px}
@@ -440,13 +440,14 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 @media(max-width:760px){.identity-orbit{width:126px;height:126px;right:18px;top:44px}.identity-orbit__logo{width:36px;height:36px;padding:4px}.identity-orbit__fiab{left:calc(50% - 18px);top:-18px}.identity-orbit__brand{left:-18px;bottom:6px}.identity-orbit__cujae{right:-18px;bottom:6px}.contact-inner{padding-top:132px}}
 @media(prefers-reduced-motion:reduce){.identity-orbit__track,.identity-orbit__logo{animation:none}}
 
-/* FIAB / Bar_Hdez / CUJAE orbit around the rectangular portrait edge */
+/* MAT / CODE / CTRL recorren el contorno rectangular exterior del retrato */
 .portrait-image{z-index:1}
 .portrait-edge-orbit{position:absolute;z-index:5;top:32px;left:10px;right:10px;height:275px;pointer-events:none;overflow:visible}
 .portrait-edge-line{position:absolute;inset:-1px;border:1px solid #62c7d82b;pointer-events:none}
-.portrait-edge-logo{position:absolute;left:0;top:0;width:35px;height:35px;padding:4px;display:grid;place-items:center;background:linear-gradient(145deg,#142635f5,#0b1722f5);border:1px solid #547080a0;box-shadow:0 4px 14px #0008;offset-path:inset(0);offset-rotate:0deg;offset-anchor:center;animation:portrait-edge-travel 18s linear infinite;will-change:offset-distance,transform}
-.portrait-edge-logo img{width:100%;height:100%;display:block;object-fit:contain}
-.edge-fiab{animation-delay:0s}.edge-brand{animation-delay:-6s}.edge-cujae{animation-delay:-12s}
-@keyframes portrait-edge-travel{0%,5%{offset-distance:0%;transform:scale(.78)}12%,20%{transform:scale(1)}25%,100%{offset-distance:100%;transform:scale(1)}}
-@media(max-width:760px){.portrait-edge-orbit{top:32px;height:275px}.portrait-edge-logo{width:30px;height:30px;padding:3px}}
-@media(prefers-reduced-motion:reduce){.portrait-edge-logo{animation:none;offset-distance:0%}}
+.portrait-edge-tag{position:absolute;left:0;top:0;min-width:48px;height:30px;padding:0 9px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#142635ed,#0b1722ed);border:1px solid #547080a0;border-radius:7px;box-shadow:0 6px 18px #0005;color:#dceaf0;font:600 9px var(--mono);letter-spacing:1px;offset-path:inset(-15px);offset-rotate:0deg;offset-anchor:center;animation:portrait-edge-travel 36s linear infinite;will-change:offset-distance}
+.edge-mat{animation-delay:0s}
+.edge-code{animation-delay:-12s}
+.edge-ctrl{animation-delay:-24s}
+@keyframes portrait-edge-travel{from{offset-distance:0%}to{offset-distance:100%}}
+@media(max-width:760px){.portrait-edge-orbit{top:32px;height:225px}.portrait-edge-tag{min-width:43px;height:27px;padding:0 7px;font-size:8px;offset-path:inset(-13px)}}
+@media(prefers-reduced-motion:reduce){.portrait-edge-tag{animation:none;offset-distance:0%}}
