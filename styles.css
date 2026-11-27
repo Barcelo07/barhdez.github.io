@@ -351,3 +351,8 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 @media(prefers-reduced-transparency:reduce){
   .portrait-image:after{background:linear-gradient(180deg,transparent 72%,#07111a55)}
 }
+
+/* Career status label in the About profile stats */
+.about-stats .career-stat{gap:7px}
+.about-stats .about-stat-status{display:inline-flex;align-self:center;align-items:center;gap:5px;padding:4px 8px;border:1px solid rgba(91,220,190,.28);border-radius:999px;background:rgba(91,220,190,.08);color:#79d9bf;font:500 8px/1.2 var(--mono);letter-spacing:.09em}
+.about-stats .about-stat-status:before{content:"";width:5px;height:5px;border-radius:50%;background:#79d9bf;box-shadow:0 0 8px rgba(121,217,191,.55)}
