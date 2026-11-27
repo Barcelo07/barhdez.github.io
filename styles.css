@@ -372,10 +372,10 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
   border-color:#62c7d8a8;background:linear-gradient(145deg,rgba(25,57,70,.98),rgba(14,24,33,.98));
   box-shadow:0 8px 26px #0003,inset 0 0 24px #62c7d810;transform:translateY(-2px)
 }
-.about-stats .about-areas-toggle strong{font:600 clamp(25px,3vw,34px)/1 var(--display);color:var(--cyan)}
+.about-stats .about-areas-toggle .areas-trend-icon{width:34px;height:34px;stroke-width:1.65;color:var(--cyan);margin:0 0 1px}
 .about-stats .about-areas-toggle span{font:9px/1.55 var(--mono);letter-spacing:.045em;text-transform:uppercase;color:var(--muted)}
 .about-stats .about-areas-toggle small{font:8px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#79d9bf}
-.about-stats .about-areas-toggle>svg{position:absolute;right:12px;top:14px;width:15px;height:15px;color:var(--cyan)}
+.about-stats .about-areas-toggle .areas-shortcut-arrow{position:absolute;right:12px;top:14px;width:15px;height:15px;color:var(--cyan)}
 .areas-dropdown{max-width:900px;margin-top:28px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#101c27f5,#0c141df5);overflow:hidden}
 .areas-dropdown>summary{display:flex;align-items:center;gap:14px;padding:18px 20px;cursor:pointer;list-style:none}
 .areas-dropdown>summary::-webkit-details-marker{display:none}
