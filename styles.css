@@ -339,3 +339,15 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 }
 .hero-description{margin-top:8px}
 @media(max-width:760px){.hero-tagline{font-size:18px;max-width:34ch}}
+
+
+/* Portrait color harmony — cool, natural engineering palette */
+.portrait-image img{
+  filter: saturate(.86) contrast(1.035) brightness(.99) hue-rotate(-5deg);
+}
+.portrait-image:after{
+  background:linear-gradient(180deg,rgba(27,75,99,.075) 0%,rgba(14,43,61,.035) 58%,#07111a66 100%);
+}
+@media(prefers-reduced-transparency:reduce){
+  .portrait-image:after{background:linear-gradient(180deg,transparent 72%,#07111a55)}
+}
