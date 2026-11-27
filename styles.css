@@ -440,14 +440,21 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 @media(max-width:760px){.identity-orbit{width:126px;height:126px;right:18px;top:44px}.identity-orbit__logo{width:36px;height:36px;padding:4px}.identity-orbit__fiab{left:calc(50% - 18px);top:-18px}.identity-orbit__brand{left:-18px;bottom:6px}.identity-orbit__cujae{right:-18px;bottom:6px}.contact-inner{padding-top:132px}}
 @media(prefers-reduced-motion:reduce){.identity-orbit__track,.identity-orbit__logo{animation:none}}
 
-/* MAT / CODE / CTRL recorren el contorno rectangular exterior del retrato */
-.portrait-image{z-index:1}
-.portrait-edge-orbit{position:absolute;z-index:5;top:32px;left:10px;right:10px;height:275px;pointer-events:none;overflow:visible}
-.portrait-edge-line{position:absolute;inset:-1px;border:1px solid #62c7d82b;pointer-events:none}
-.portrait-edge-tag{position:absolute;left:0;top:0;min-width:48px;height:30px;padding:0 9px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#142635ed,#0b1722ed);border:1px solid #547080a0;border-radius:7px;box-shadow:0 6px 18px #0005;color:#dceaf0;font:600 9px var(--mono);letter-spacing:1px;offset-path:inset(-15px);offset-rotate:0deg;offset-anchor:center;animation:portrait-edge-travel 36s linear infinite;will-change:offset-distance}
-.edge-mat{animation-delay:0s}
-.edge-code{animation-delay:-12s}
-.edge-ctrl{animation-delay:-24s}
-@keyframes portrait-edge-travel{from{offset-distance:0%}to{offset-distance:100%}}
-@media(max-width:760px){.portrait-edge-orbit{top:32px;height:225px}.portrait-edge-tag{min-width:43px;height:27px;padding:0 7px;font-size:8px;offset-path:inset(-13px)}}
-@media(prefers-reduced-motion:reduce){.portrait-edge-tag{animation:none;offset-distance:0%}}
+/* Órbita de logotipos alrededor de la fotografía */
+.portrait-image-wrap{position:relative;height:275px;overflow:visible}
+.portrait-image{height:275px;overflow:hidden;border:1px solid #385164;background:#111d28;position:relative;z-index:1}
+.portrait-logo-orbit{position:absolute;z-index:5;inset:-1px;pointer-events:none;overflow:visible}
+.portrait-logo-line{position:absolute;inset:0;border:1px solid #62c7d82b;pointer-events:none}
+.portrait-logo-item{position:absolute;width:38px;height:38px;padding:4px;display:grid;place-items:center;border:1px solid #54708080;background:linear-gradient(145deg,#142635ed,#0b1722ed);box-shadow:0 6px 18px #0005;border-radius:50%;offset-path:inset(-19px);offset-rotate:0deg;offset-anchor:center;animation:portrait-logo-travel 36s linear infinite;will-change:offset-distance}
+.portrait-logo-item img{display:block;width:100%;height:100%;object-fit:contain}
+.logo-fiab{animation-delay:0s}.logo-brand{animation-delay:-12s}.logo-cujae{animation-delay:-24s}
+@keyframes portrait-logo-travel{from{offset-distance:0%}to{offset-distance:100%}}
+
+/* MAT / CODE / CTRL recorren el marco exterior de la tarjeta que sostiene la foto */
+.portrait-card{isolation:isolate}
+.portrait-card-orbit{position:absolute;z-index:6;inset:-13px;pointer-events:none;overflow:visible}
+.portrait-card-tag{position:absolute;left:0;top:0;min-width:48px;height:30px;padding:0 9px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#142635ed,#0b1722ed);border:1px solid #547080a0;border-radius:7px;box-shadow:0 6px 18px #0005;color:#dceaf0;font:600 9px var(--mono);letter-spacing:1px;offset-path:inset(0);offset-rotate:0deg;offset-anchor:center;animation:portrait-card-travel 42s linear infinite;will-change:offset-distance}
+.card-mat{animation-delay:0s}.card-code{animation-delay:-14s}.card-ctrl{animation-delay:-28s}
+@keyframes portrait-card-travel{from{offset-distance:0%}to{offset-distance:100%}}
+@media(max-width:760px){.portrait-image-wrap,.portrait-image{height:225px}.portrait-logo-item{width:32px;height:32px;padding:3px;offset-path:inset(-16px)}.portrait-card-orbit{inset:-11px}.portrait-card-tag{min-width:42px;height:27px;padding:0 7px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){.portrait-logo-item,.portrait-card-tag{animation:none;offset-distance:0%}}
