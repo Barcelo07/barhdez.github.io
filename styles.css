@@ -452,8 +452,8 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 .identity-orbit__fiab{left:calc(50% - 24px);top:-24px}
 .identity-orbit__brand{left:-24px;bottom:9px}
 .identity-orbit__cujae{right:-24px;bottom:9px}
-@keyframes identity-orbit-alternate{0%,100%{transform:rotate(0deg)}50%{transform:rotate(360deg)}}
-@keyframes identity-orbit-upright{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-360deg)}}
+@keyframes identity-orbit-alternate{0%,100%{transform:rotate(0deg)}50%{transform:rotate(123deg)}}
+@keyframes identity-orbit-upright{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-123deg)}}
 
 @media(max-width:760px){.identity-orbit{width:126px;height:126px;right:18px;top:44px}.identity-orbit__logo{width:36px;height:36px;padding:4px}.identity-orbit__fiab{left:calc(50% - 18px);top:-18px}.identity-orbit__brand{left:-18px;bottom:6px}.identity-orbit__cujae{right:-18px;bottom:6px}.contact-inner{padding-top:132px}}
 @media(prefers-reduced-motion:reduce){.identity-orbit__track,.identity-orbit__logo{animation:none;transform:none}}
