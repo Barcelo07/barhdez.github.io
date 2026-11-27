@@ -326,3 +326,16 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
   .brand-name{font-size:10px}
 }
 @media(prefers-reduced-motion:reduce){.brand-mark{transition:none}.brand:hover .brand-mark{transform:none}}
+
+
+/* Hero tagline — selected positioning statement */
+.hero-tagline{
+  max-width:560px;
+  margin:13px 0 9px;
+  color:#e4f2f5;
+  font:600 clamp(17px,1.65vw,21px)/1.55 var(--display);
+  letter-spacing:-.025em;
+  text-wrap:pretty;
+}
+.hero-description{margin-top:8px}
+@media(max-width:760px){.hero-tagline{font-size:18px;max-width:34ch}}
