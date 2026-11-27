@@ -461,9 +461,9 @@ html.js .reveal.visible{opacity:1;transform:translate3d(0,0,0)}
 /* MAT / CODE / CTRL orbitan por el marco exterior de la tarjeta del perfil */
 .portrait-card{isolation:isolate}
 .portrait-card-orbit{position:absolute;z-index:7;inset:-1px;pointer-events:none;overflow:visible}
-.portrait-card-tag{position:absolute;left:0;top:0;min-width:48px;height:30px;padding:0 9px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#142635ed,#0b1722ed);border:1px solid #547080a0;border-radius:7px;box-shadow:0 6px 18px #0005;color:#dceaf0;font:600 9px var(--mono);letter-spacing:1px;offset-path:inset(-15px);offset-rotate:0deg;offset-anchor:center;animation:portrait-card-travel 42s linear infinite;will-change:offset-distance}
-.card-mat{animation-delay:0s}.card-code{animation-delay:-14s}.card-ctrl{animation-delay:-28s}
-@keyframes portrait-card-travel{from{offset-distance:0%}to{offset-distance:100%}}
+.portrait-card-tag{position:absolute;left:0;top:0;min-width:48px;height:30px;padding:0 9px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#142635ed,#0b1722ed);border:1px solid #547080a0;border-radius:7px;box-shadow:0 6px 18px #0005;color:#dceaf0;font:600 9px var(--mono);letter-spacing:1px;offset-path:inset(-15px);offset-rotate:0deg;offset-anchor:center;animation:portrait-card-travel 10s linear infinite;will-change:offset-distance}
+.card-mat{animation-delay:0s}.card-code{animation-delay:-3.333s}.card-ctrl{animation-delay:-5s}
+@keyframes portrait-card-travel{0%,100%{offset-distance:0%}50%{offset-distance:100%}}
 @media(max-width:760px){.portrait-card-orbit{inset:-1px}.portrait-card-tag{min-width:42px;height:27px;padding:0 7px;font-size:8px;offset-path:inset(-13px)}}
 @media(prefers-reduced-motion:reduce){.portrait-card-tag{animation:none;offset-distance:0%}}
 
